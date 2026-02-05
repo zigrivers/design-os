@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Ensure Tailwind scans all component directories including dynamically loaded screen designs */
+@source "../src/**/*.{ts,tsx}";
+@source "../src/sections/**/*.{ts,tsx}";
+@source "../src/shell/**/*.{ts,tsx}";
+
 @custom-variant dark (&:is(.dark *));
 
 /*
